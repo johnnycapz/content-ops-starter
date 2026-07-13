@@ -5,7 +5,7 @@ date: '2025-01-15'
 excerpt: >-
   Vel repellat dolores ut unde voluptatum ut optio voluptates est aliquid. Ut
   earum corporis id Quis esse est galisum officiis accusantium enim et
-  asperiores dolore.
+  asperiores dolor.
 featuredImage:
   url: /images/abstract-feature3.svg
   altText: Thumbnail
