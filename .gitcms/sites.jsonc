@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "sites": [
+    {
+      "key": "iridescent-beijinho-dcac03",
+      "display_name": "Iridescent Beijinho Dcac03",
+      "website_url": "https://iridescent-beijinho-dcac03.netlify.app/",
+      "root_path": ""
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "version": "1.2",
+  "media": {
+    "default_library": "repo_media",
+    "libraries": [
+      {
+        "key": "repo_media",
+        "label": "Repository media",
+        "references": {
+          "write": {
+            "mode": "root_relative",
+            "base_path": "/"
+          },
+          "allow_default_library_fallback": true
+        },
+        "limits": {
+          "max_file_size_mb": 10
+        },
+        "driver": "git",
+        "storage": {
+          "root_path": "public"
+        }
+      }
+    ]
+  },
+  "ssg_framework": "nextjs",
+  "frontmatter_format": "yaml",
+  "publishing_mode": "direct_publish",
+  "collections": [
+    {
+      "name": "blog",
+      "git_path": "/content/pages/blog/",
+      "file_extension": ".md",
+      "filename_pattern": "",
+      "collection_type": "flat",
+      "frontmatter_schema": [
+        {
+          "name": "title",
+          "type": "title",
+          "label": "Title"
+        },
+        {
+          "name": "slug",
+          "type": "datetime",
+          "label": "Slug"
+        },
+        {
+          "name": "date",
+          "type": "datetime",
+          "label": "Date"
+        },
+        {
+          "name": "excerpt",
+          "type": "richtext",
+          "label": "Excerpt"
+        },
+        {
+          "name": "featuredImage",
+          "type": "json",
+          "label": "Featured Image"
+        },
+        {
+          "name": "bottomSections",
+          "type": "list",
+          "label": "Bottom Sections"
+        },
+        {
+          "name": "isFeatured",
+          "type": "boolean",
+          "label": "Is Featured",
+          "default": true
+        },
+        {
+          "name": "colors",
+          "type": "text",
+          "label": "Colors"
+        },
+        {
+          "name": "styles",
+          "type": "json",
+          "label": "Styles"
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "label": "Type"
+        }
+      ]
+    }
+  ]
+}
